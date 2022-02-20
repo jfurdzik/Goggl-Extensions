@@ -1,0 +1,18 @@
+.image{
+    display: flex;
+    justify-content: center;
+    border-width: 500px;
+    border-color: rgb(85,22,22);
+}
+
+.link-content{
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: start;
+}
+
+body{
+    background-color: rgb(250, 211, 230);
+}
+
