@@ -2,6 +2,16 @@
 function getDate() { 
     let date = document.querySelector('#taskDate').value;
     let name = document.querySelector('#taskName').value; //rep
+    let start = document.querySelector('#taskStart').value;
+    let end = document.querySelector('#taskEnd').value;
+    let work = document.querySelector('#taskWorkTime').value;
+    let breakT = document.querySelector('#taskBreakTime').value;
+    let ints = document.querySelector('#taskint').value;
+    let notes = document.querySelector('#taskNotes').value;
+    let music = document.querySelector('#taskMusic').value;
+    let location = document.querySelector('#taskLoc').value;
+
+
     console.log(date);
     const entriesString = sessionStorage.getItem("entries");
     let entries = {rows: []};
@@ -14,6 +24,14 @@ function getDate() {
     const entry = {
         date: date,
         name: name, //rep
+        start: start,
+        end: end,
+        work: work,
+        breakT: breakT,
+        ints: ints,
+        notes: notes,
+        music: music,
+        location: location
     }
     entries.rows.push(entry);
     sessionStorage.setItem("entries", JSON.stringify(entries));
@@ -43,6 +61,38 @@ function addRow()
             const nameth = document.createElement("th");
             nameth.innerHTML = entries.rows[i].name;
             tr.appendChild(nameth);
+
+            const startth = document.createElement("th");
+            startth.innerHTML = entries.rows[i].start;
+            tr.appendChild(startth);
+
+            const endth = document.createElement("th");
+            endth.innerHTML = entries.rows[i].end;
+            tr.appendChild(endth);
+
+            const workth = document.createElement("th");
+            workth.innerHTML = entries.rows[i].work;
+            tr.appendChild(workth);
+
+            const breakTth = document.createElement("th");
+            breakTth.innerHTML = entries.rows[i].breakT;
+            tr.appendChild(breakTth);
+
+            const intsth = document.createElement("th");
+            intsth.innerHTML = entries.rows[i].ints;
+            tr.appendChild(intsth);
+
+            const notesth = document.createElement("th");
+            notesth.innerHTML = entries.rows[i].notes;
+            tr.appendChild(notesth);
+
+            const musicth = document.createElement("th");
+            musicth.innerHTML = entries.rows[i].music;
+            tr.appendChild(musicth);
+
+            const locationth = document.createElement("th");
+            locationth.innerHTML = entries.rows[i].location;
+            tr.appendChild(locationth);
 
             table.appendChild(tr);
         }
