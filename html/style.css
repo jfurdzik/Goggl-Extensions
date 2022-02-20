@@ -3,7 +3,7 @@ body {
     background-color: rgb(250, 211, 230);
 }
 
-#task-table {
+/*#task-table {
     
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
@@ -11,7 +11,7 @@ body {
     margin: 2rem;
     grid-gap: 10px 0px;
     
-}
+}*/
 
 .cell {
     color: white;
