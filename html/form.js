@@ -17,7 +17,7 @@ function addRow()
         str+="<td>"+i+"</td>";
         str+="</tr>";
     }
-    $('#add').append(str);
+    $('#add').append(str); //insert row
 }
 //in html FORM submit button -> onClick="getDate()" 
 //also add <script src="form.js"></script> to end of ^ file
