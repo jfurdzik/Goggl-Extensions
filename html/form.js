@@ -5,6 +5,11 @@ function getDate() {
     let start = document.querySelector('#taskStart').value;
     let end = document.querySelector('#taskEnd').value;
     let work = document.querySelector('#taskWorkTime').value;
+    let breakT = document.querySelector('#taskBreakTime').value;
+    let ints = document.querySelector('#taskint').value;
+    let notes = document.querySelector('#taskNotes').value;
+    let music = document.querySelector('#taskMusic').value;
+    let location = document.querySelector('#taskLoc').value;
 
 
     console.log(date);
@@ -22,6 +27,11 @@ function getDate() {
         start: start,
         end: end,
         work: work,
+        breakT: breakT,
+        ints: ints,
+        notes: notes,
+        music: music,
+        location: location
     }
     entries.rows.push(entry);
     sessionStorage.setItem("entries", JSON.stringify(entries));
@@ -63,6 +73,26 @@ function addRow()
             const workth = document.createElement("th");
             workth.innerHTML = entries.rows[i].work;
             tr.appendChild(workth);
+
+            const breakTth = document.createElement("th");
+            breakTth.innerHTML = entries.rows[i].breakT;
+            tr.appendChild(breakTth);
+
+            const intsth = document.createElement("th");
+            intsth.innerHTML = entries.rows[i].ints;
+            tr.appendChild(intsth);
+
+            const notesth = document.createElement("th");
+            notesth.innerHTML = entries.rows[i].notes;
+            tr.appendChild(notesth);
+
+            const musicth = document.createElement("th");
+            musicth.innerHTML = entries.rows[i].music;
+            tr.appendChild(musicth);
+
+            const locationth = document.createElement("th");
+            locationth.innerHTML = entries.rows[i].location;
+            tr.appendChild(locationth);
 
             table.appendChild(tr);
         }
