@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 function getDate() { 
     let date = document.querySelector('#taskDate').value;
     console.log(date);
@@ -9,4 +8,4 @@ function getDate() {
 
 //in html FORM submit button -> onClick="getDate()" 
 //also add <script src="form.js"></script> to end of ^ file
->>>>>>> d2e31972feb47b63d3048f4878ee6bc69b94be39
+
