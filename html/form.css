@@ -1,0 +1,12 @@
+.header{
+    display:flex;
+    justify-content: center;
+}
+.task-input{
+    display:flex;
+    flex-direction:column;
+}
+
+body{
+    background-color: #F4C2C2;
+}
