@@ -8,6 +8,9 @@
     margin-bottom: 2%;
 }
 
+.taskInput{
+    background: #f49cbb;
+}
 body{
     background-color: rgb(250, 211, 230);
 }
