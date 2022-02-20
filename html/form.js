@@ -1,7 +1,7 @@
 
 function getDate() { 
     let date = document.querySelector('#taskDate').value;
-    let name = document.querySelector('#taskName').value;
+    let name = document.querySelector('#taskName').value; //rep
     console.log(date);
     const entriesString = sessionStorage.getItem("entries");
     let entries = {rows: []};
@@ -13,7 +13,7 @@ function getDate() {
     
     const entry = {
         date: date,
-        name: name,
+        name: name, //rep
     }
     entries.rows.push(entry);
     sessionStorage.setItem("entries", JSON.stringify(entries));
@@ -35,10 +35,10 @@ function addRow()
         for (let i=0; i<entries.rows.length; i++)
         {
             const tr = document.createElement("tr");
-            
+
             const dateth = document.createElement("th");
             dateth.innerHTML = entries.rows[i].date;
-            tr.appendChild(dateth);
+            tr.appendChild(dateth); //rep ^ 3
 
             const nameth = document.createElement("th");
             nameth.innerHTML = entries.rows[i].name;
