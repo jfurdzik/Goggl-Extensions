@@ -1,13 +1,6 @@
-.image{
-    display: flex;
-    justify-content: center;
-    border-width: 500px;
-    border-color: rgb(85,22,22);
-}
-
-/*body{
+body{
     background-color: rgb(250, 211, 230);
-   
+   /* background-color: #F4C2C2;*/
 }
 
 .topnav {
@@ -15,7 +8,7 @@
     overflow: hidden;
 }
 
-
+/*links inside nav bar*/
 .topnav a {
     float: left;
     color: white;
@@ -25,13 +18,13 @@
     font-size: 17px;
 }
 
-
+/*chng color of links when u hover*/
 .topnav a:hover {
     background-color: #ddd;
 }
 
-
+/*color of active/current link*/
 .topnav a.active {
     background-color: #dd2d4a;
     color: white;
-}*/
+}
