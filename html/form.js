@@ -2,6 +2,8 @@
 function getDate() { 
     let date = document.querySelector('#taskDate').value;
     let name = document.querySelector('#taskName').value; //rep
+    let start = document.querySelector('#taskStart').value;
+
     console.log(date);
     const entriesString = sessionStorage.getItem("entries");
     let entries = {rows: []};
@@ -14,6 +16,7 @@ function getDate() {
     const entry = {
         date: date,
         name: name, //rep
+        start: start,
     }
     entries.rows.push(entry);
     sessionStorage.setItem("entries", JSON.stringify(entries));
@@ -43,6 +46,10 @@ function addRow()
             const nameth = document.createElement("th");
             nameth.innerHTML = entries.rows[i].name;
             tr.appendChild(nameth);
+
+            const startth = document.createElement("th");
+            startth.innerHTML = entries.rows[i].start;
+            tr.appendChild(startth);
 
             table.appendChild(tr);
         }
