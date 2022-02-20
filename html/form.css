@@ -5,8 +5,22 @@
 .task-input{
     display:flex;
     flex-direction:column;
+    margin-bottom: 2%;
 }
 
 body{
     background-color: rgb(250, 211, 230);
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+input{
+    text-align: center;
 }
