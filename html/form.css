@@ -6,13 +6,13 @@
     display:flex;
     flex-direction:column;
     margin-bottom: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .taskInput{
     background: #f49cbb;
-}
-body{
-    background-color: rgb(250, 211, 230);
 }
 
 .form-button{
